@@ -47,6 +47,6 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-		window.location = "res/site/index.html";
+		//window.location = "res/site/index.html";
     }
 };
