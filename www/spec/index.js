@@ -50,7 +50,7 @@ describe('app', function() {
                             '    <p class="event listening">Listening</p>',
                             '    <p class="event received">Received</p>',
                             '</div>'].join('\n');
-							window.location = "res/site/index.html";
+							//window.location = "res/site/index.html";
         });
 
         it('should hide the listening element', function() {
