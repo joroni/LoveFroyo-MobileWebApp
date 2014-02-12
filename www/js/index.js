@@ -41,12 +41,12 @@ var app = {
 		//document.location.href = "mobile-application/index.html";
 		
 		
-		  window.onload = function() {
+		/*  window.onload = function() {
                     if (currentWindowOnload) {
                         currentWindowOnload();
                     }
                     window.location="spec.html";
-                };
+                };*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
