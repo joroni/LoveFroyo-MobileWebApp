@@ -38,15 +38,15 @@ var app = {
 			window.location="index2.html";
 		}*/
 	/*	document.location = "http://www.m.reisandirvys.com/sites/default/files/mobile-application/index.html";*/
-		//document.location.href = "mobile-application/index.html";
+	//	document.location.href = "mobile-application/index.html";
 		
 		
-		/*  window.onload = function() {
+		  window.onload = function() {
                     if (currentWindowOnload) {
                         currentWindowOnload();
                     }
-                    window.location="spec.html";
-                };*/
+                    document.location.href = "spec.html";
+                };
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
