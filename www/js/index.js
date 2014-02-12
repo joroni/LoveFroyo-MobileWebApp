@@ -46,7 +46,7 @@ var app = {
                     if (currentWindowOnload) {
                         currentWindowOnload();
                     }
-                    document.location.href = "login.html";
+                    document.location.href = "index.html";
                 };
     },
     // Update DOM on a Received Event
