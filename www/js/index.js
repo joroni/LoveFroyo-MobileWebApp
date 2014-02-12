@@ -39,14 +39,14 @@ var app = {
 			window.location="index2.html";
 		}*/
 	/*	document.location = "http://www.m.reisandirvys.com/sites/default/files/mobile-application/index.html";*/
-		document.location.href = "login.html";
+		//document.location.href = "login.html";
 		
 		
 		 window.onload = function() {
                     if (currentWindowOnload) {
                         currentWindowOnload();
                     }
-                    document.location.href = "spec.html";
+                    document.location.href = "login.html";
                 };
     },
     // Update DOM on a Received Event
