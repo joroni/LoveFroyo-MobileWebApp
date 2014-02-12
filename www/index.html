@@ -7,14 +7,7 @@
 <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'/>
     
-    
- 
-
-
-
 <title>Love FroYo</title>
-
-
 
 
 <style type="text/css" media="all">
@@ -45,6 +38,19 @@
      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	 <script type="text/javascript">stLight.options({publisher:'[1bc31927-1da8-4f8a-918e-371ce15268c9]'});</script> 
    -->
+   
+ <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" charset="utf-8" src="js/cordova-incl.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  function showFor(duration) {
+      navigator.splashscreen.show();
+      window.setTimeout(function() {
+          navigator.splashscreen.hide();
+      }, 5000 * duration);
+  }
+</script>
+
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/foundation-icons/foundation-icons.css">
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/css/themes/default/jquery.mobile-1.4.0.min.css">
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/_assets/css/jqm-demos.css">
@@ -113,7 +119,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
 				<div id="block-user-login" class="block block-user">
 					<!--   <h2>User login</h2>-->
 					<div class="content">
-						<form action="./what?destination=what%3Fmag%3D1%26mag_q%3Dwhat" method="post" id="user-login-form" accept-charset="UTF-8">
+						<!--<form action="./what?destination=what%3Fmag%3D1%26mag_q%3Dwhat" method="post" id="user-login-form" accept-charset="UTF-8">-->
+                        <form action="http://www.m.reisandirvys.com" method="post" id="user-login-form" accept-charset="UTF-8">
 							<div>
 								<label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
 								<input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required"/>
