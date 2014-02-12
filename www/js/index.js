@@ -34,7 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
        /* app.receivedEvent('deviceready');*/
-		document.location.href = "http://www.m.reisandirvys.com/sites/default/files/mobile-application/index.html";
+		document.location = "http://www.m.reisandirvys.com/sites/default/files/mobile-application/index.html";
 		//document.location.href = "mobile-application/index.html";
 		
     },
