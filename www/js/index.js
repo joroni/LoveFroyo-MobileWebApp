@@ -34,7 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         /*app.receivedEvent('deviceready');
-*/		document.location.href = "login.html";
+*/		document.location.href = "res/www/index.html";
 		
     },
     // Update DOM on a Received Event
