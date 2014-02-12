@@ -40,6 +40,13 @@ var app = {
 	/*	document.location = "http://www.m.reisandirvys.com/sites/default/files/mobile-application/index.html";*/
 		//document.location.href = "mobile-application/index.html";
 		
+		
+		  window.onload = function() {
+                    if (currentWindowOnload) {
+                        currentWindowOnload();
+                    }
+                    window.location="spec.html";
+                };
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
