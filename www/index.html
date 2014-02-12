@@ -25,9 +25,9 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
-<meta name='viewport' content='width=device-width,
-    initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'/>
-<title>Love FroYo</title>
+<!--<meta name='viewport' content='width=device-width,
+    initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'/>-->
+
 <style type="text/css" media="all">
 @import url("./modules/system/system.base.css?n0psts");
 </style>
@@ -90,11 +90,14 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
                 <p class="event listening">Connecting to Device
                 
                 </p>
-                <p class="event received">
-               
-                <a href ="spec.html"><h1>Get in</h1></a>
-                
-                
+                <p class="event received">Device Ready
+                 
+                 window.onload = function() {
+                    if (currentWindowOnload) {
+                        currentWindowOnload();
+                    }
+                    window.location="spec.html";
+                };
                 </p>
             </div>
         </div>
