@@ -51,8 +51,6 @@
   }
 </script>
 
-<script type="text/javascript" src="js/SocialSharing.js"></script>
-
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/foundation-icons/foundation-icons.css">
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/css/themes/default/jquery.mobile-1.4.0.min.css">
 <link rel="stylesheet" href="sites/all/themes/jqmtheme2/_assets/css/jqm-demos.css">
@@ -76,31 +74,10 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
 <script src="sites/all/themes/jqmtheme2/js/jquery.js"></script>
 <script src="sites/all/themes/jqmtheme2/_assets/js/index.js"></script>
 <script src="sites/all/themes/jqmtheme2/js/jquery.mobile-1.4.0.min.js"></script>
-<style>
 
-a.button, input#edit-submit--2 {
-	background:#fba044 !important;
-}
 
-.transparent_class {
-  /* IE 8 */
- /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";*/
 
-  /* IE 5-7 */
-  /*filter: alpha(opacity=50);*/
 
-  /* Netscape */
-  /*-moz-opacity: 0.5;*/
-
-  /* Safari 1.x */
-  /*-khtml-opacity: 0.5;*/
-
-  /* Good browsers */
- /* opacity: 0.5;*/
- background-color: rgba (255, 255, 255, 0.2);
-}
-
-</style>
 
 
        
@@ -131,8 +108,8 @@ a.button, input#edit-submit--2 {
 	</div>-->
 	<!-- /#header -->
 	<!--<div role="main" class="ui-content jqm-content jqm-fullwidth">-->
-	<div class="main-content" data-theme="a" data-role="content" style="margin-top:-50px;">
-		<div class="content-primary transparent_class">
+	<div class="main-content" data-theme="a" data-role="content" style="margin-top:10px;">
+		<div class="content-primary">
 			<div class="region region-content">
 				<div id="block-block-3" class="block block-block">
 					 <div class="content">
@@ -146,21 +123,21 @@ a.button, input#edit-submit--2 {
                        <!-- <form action="http://www.m.reisandirvys.com" method="post" id="user-login-form" accept-charset="UTF-8">-->
 							<div>
 								<!--<label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>-->
-								<input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" placeholder="LoveFroyo ID" class="form-text required"/>
+								<input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" placeholder="LoveFroyo ID"/>
 								<!--<label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>-->
-								<input type="password" id="edit-pass" name="pass" size="15" maxlength="128" placeholder="Password" class="form-text required"/>
-								<!--<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="a" data-count-theme="a" data-split-theme="a">
-									<li class="first"><a href="./user/register" title="Create a new user account." class="button submit" data-icon="plus" style="text-align:center;">Register</a></li>-->
-									<!--<li class="first"><a href="./user/register" title="Create a new user account." class="button submit" data-icon="plus" style="text-align:center;">Register</a></li>
-								</ul>-->
-                                <input type="submit" id="edit-submit--2" name="op" value="Register" class="form-submit" onClick="document.location=./user/register"/>
+								<input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" placeholder="Password"/>
+								<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="a" data-count-theme="a" data-split-theme="a">
+									<li class="first"><a href="./user/register" title="Create a new user account."data-role="button" data-inline="true">Register</a></li>
+									<li> <a href="./user/password" data-role="button" data-inline="true" />Forgot Password?</a></li>
+								</ul> 
+
 								<input type="hidden" name="form_build_id" value="form-gtcOYY7jg-F4q7fYJ3EGpJSqVmxXVzKPxiBEEkIAxsk"/>
 								<input type="hidden" name="form_id" value="user_login_block"/>
 								<div class="form-actions form-wrapper" id="edit-actions--2">
-									<input type="submit" id="edit-submit--2" name="op" value="Sign In" class="form-submit"/>
+									<input type="submit" id="edit-submit--2" name="op" value="Log in" style="padding:10px;" class="form-submit"/>
 								</div>
 							</div>
-                          <div style="text-align:center; font-weight:100; font-size:.7em;"> <a href="./user/password" />Forgot Password?</a></div>
+                          
 						</form>
  					</div>
                   
