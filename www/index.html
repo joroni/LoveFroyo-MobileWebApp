@@ -108,7 +108,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
 	</div>-->
 	<!-- /#header -->
 	<!--<div role="main" class="ui-content jqm-content jqm-fullwidth">-->
-	<div class="main-content" data-theme="a" data-role="content" style="margin-top:-50px;">
+	<div class="main-content" data-theme="a" data-role="content" style="margin-top:7px;">
 		<div class="content-primary">
 			<div class="region region-content">
 				<div id="block-block-3" class="block block-block">
@@ -119,32 +119,37 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
 				<div id="block-user-login" class="block block-user">
 					<!--   <h2>User login</h2>-->
 					<div class="content">
-						<!--<form action="./what?destination=what%3Fmag%3D1%26mag_q%3Dwhat" method="post" id="user-login-form" accept-charset="UTF-8">-->
-                        <form action="http://www.m.reisandirvys.com" method="post" id="user-login-form" accept-charset="UTF-8">
+						<form action="http://www.m.reisandirvys.com/what?destination=what%3Fmag%3D1%26mag_q%3Dwhat" method="post" id="user-login-form" accept-charset="UTF-8">
+                       <!-- <form action="http://www.m.reisandirvys.com" method="post" id="user-login-form" accept-charset="UTF-8">-->
 							<div>
-								<label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
-								<input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required"/>
-								<label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
-								<input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required"/>
-								<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="a" data-count-theme="a" data-split-theme="a" data-split-icon="arrow-r">
-									<li data-icon="arrow-r" class="first"><a href="./user/register" title="Create a new user account.">Create new account</a></li>
-									<li data-icon="arrow-r" class="last"><a href="./user/password" title="Request new password via e-mail.">Request new password</a></li>
-								</ul>
+								<!--<label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>-->
+								<input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" placeholder="LoveFroyo ID"/>
+								<!--<label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>-->
+								<input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" placeholder="Password"/>
+								<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="a" data-count-theme="a" data-split-theme="a">
+									<li class="first"><a href="./user/register" title="Create a new user account."data-role="button" data-inline="true">Register</a></li>
+									<li> <a href="./user/password" data-role="button" data-inline="true" />Forgot Password?</a></li>
+								</ul> 
+
 								<input type="hidden" name="form_build_id" value="form-gtcOYY7jg-F4q7fYJ3EGpJSqVmxXVzKPxiBEEkIAxsk"/>
 								<input type="hidden" name="form_id" value="user_login_block"/>
 								<div class="form-actions form-wrapper" id="edit-actions--2">
-									<input type="submit" id="edit-submit--2" name="op" value="Log in" class="form-submit"/>
+									<input type="submit" id="edit-submit--2" name="op" value="Log in" style="padding:10px;" class="form-submit"/>
 								</div>
 							</div>
+                          
 						</form>
-					</div>
+ 					</div>
+                  
 				</div>
-				<div id="block-socialloginandsocialshare-share-sharing" class="block block-socialloginandsocialshare-share">
-					<div class="content">
-						<div class="lrsharecontainer">
-						</div>
-					</div>
+                
+               
+              
+                   
+				
+                  
 				</div>
+<<<<<<< HEAD
 		
 		<!-- /.content-primary -->
 		<div data-role="panel" data-display="overlay" id="nav-panel">
@@ -181,7 +186,18 @@ jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageS
 	<!--<div id="footer" data-theme="a" data-position="inline" data-role="footer">
 	</div>-->
 	<!-- /#footer -->
+=======
+    		<!-- /.content-secondary -->
+	<div id="footer" data-theme="a" data-position="inline" data-role="footer">
+        <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">message via Twitter</button>
+<button onclick="window.plugins.socialsharing.shareViaTwitter('Message and link via Twitter', null, 'http://www.x-services.nl')">msg and link via Twitter</button>
+<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, null, console.log('share ok'), function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
+<button onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null, null, console.log('share ok'), function(errormsg){alert(errormsg)})">msg via WhatsApp (with errcallback)</button>
+	</div>
+	 <!--/#footer --> 
+>>>>>>> 6e2a6dfbcaadcd6fa4be276c10f24ab167f5dc26
 </div>
+
 <!-- /#page -->
 
 </body>
